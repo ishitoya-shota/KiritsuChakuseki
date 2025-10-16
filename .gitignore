@@ -1,0 +1,16 @@
+# OS・エディタ関係
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Nodeやビルドツールを使う場合
+node_modules/
+dist/
+build/
+
+# 一時ファイル・ログ
+*.log
+*.tmp
+
+# WindowsのZone.Identifierを無視
+*:[Zz]one.Identifier
