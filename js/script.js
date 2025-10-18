@@ -39,3 +39,22 @@ $(function(){
 	});
 
 });
+
+// 対応一覧No2 スプラッシュ画面の追加 Add --->
+window.addEventListener('load', () => {
+  const splash = document.getElementById('splash');
+  const main = document.getElementById('wrapper'); // ← wrapperに変更！
+
+  // 最初は wrapper を非表示にしておく
+  main.style.display = 'none';
+
+  // 4秒後にスプラッシュをフェードアウト
+  setTimeout(() => {
+    splash.classList.add('fade-out');
+    setTimeout(() => {
+      splash.style.display = 'none';
+      main.style.display = 'block'; // ← ここで通常ページを表示
+    }, 1000); // フェードアウト1秒分
+  }, 4000);
+});
+// 対応一覧No2 スプラッシュ画面の追加 Add <---
